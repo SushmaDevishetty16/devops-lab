@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+<style>
+body{font-family:Arial;margin:20px}.
+box{display:flex;gap:15px;flex-wrap:wrap}.cart{border:1px solid #aaa;padding:15px;width:150px}
+button{background:#087ff5;color:white;border:0;padding:8px}
+</style>
+</head>
+<body>
+<h2>Shopping Cart</h2>
+<div class="box">
+<div class="cart">
+product 1<br>$500</br>
+<button onclick="add()">Add</button>
+</div>
+<div class="cart">
+product 2<br>$800</br>
+<button onclick="add()">Add</button>
+</div>
+</div>
+<p id="cart">cart:0 items</p>
+<script>
+let count=0;
+function add(name)
+{
+count++;
+document.getElementById("cart").InnerText="cart:+count+ items";
+}
+</script>
+</body>
+</html>
